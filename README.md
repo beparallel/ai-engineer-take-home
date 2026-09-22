@@ -1,9 +1,9 @@
 > [!NOTE]
 > This is the starter kit codebase for Parallel's Senior AI Engineer take-home.
 
-# ICD-10 coding agent — V0 prototype
+# CIM-10 coding agent — V0 prototype
 
-This TypeScript prototype reads four hospital stays, asks a model for ICD-10 codes, then compares its predictions with reference labels.
+This TypeScript prototype reads four hospital stays, asks a model for CIM-10 codes, then compares its predictions with reference labels.
 
 Requires Node.js **20.11 or newer**.
 
@@ -40,7 +40,7 @@ npm run eval
 - `traces/<stay-id>.json` — the submitted prompt, final `content`, separate `reasoning`,
   token `usage`, and the complete parsed `providerResponse`
 
-Only final `content` is parsed for ICD-10 codes. Provider reasoning is retained for diagnosis
+Only final `content` is parsed for CIM-10 codes. Provider reasoning is retained for diagnosis
 but can never contribute codes to predictions.
 
 `npm run eval` compares these codes with `data/ground-truth.json`. Each stay scores a set overlap, `|predicted ∩ reference| / |predicted ∪ reference|`, with codes compared as unordered sets and an empty union scoring 1. The reported score is the mean of the per-stay overlaps, each stay weighted equally.
@@ -48,5 +48,5 @@ but can never contribute codes to predictions.
 ## Data
 
 - `data/stays/stay-00N/` — one stay: `stay.json` (patient details and dates), plus `antecedents.md`, `fiche-biologie.md`, and `lettre-de-liaison.md`
-- `data/coding-rules.md` — PMSI principles, malnutrition guidance, and the code nomenclature injected into the prompt
+- `data/coding-rules.md` — PMSI principles, malnutrition guidance, and the CIM-10 nomenclature injected into the prompt
 - `data/ground-truth.json` — reference labels used by `eval.ts`
