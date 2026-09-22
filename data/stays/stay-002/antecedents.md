@@ -1,0 +1,3 @@
+- Fracture du col du fémur gauche opérée en 2021 (ostéosynthèse par vis-plaque, marche autonome sans aide)
+- Diabète de type 2 diagnostiqué il y a 6 ans, traité par metformine 1000 mg x 2/j seule (aucun traitement par insuline)
+- Dyslipidémie

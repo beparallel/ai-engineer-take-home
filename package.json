@@ -1,0 +1,20 @@
+{
+  "name": "cim10-agent-v0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "agent": "tsx agent.ts",
+    "eval": "tsx eval.ts",
+    "test": "tsx --test agent.test.ts eval.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

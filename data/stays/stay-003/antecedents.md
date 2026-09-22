@@ -1,0 +1,2 @@
+- Arthrose lombaire
+- Pas d'autre antécédent médical connu

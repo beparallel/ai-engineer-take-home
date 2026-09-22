@@ -1,0 +1,2 @@
+- Tabagisme sevré il y a 10 ans
+- Appendicectomie
